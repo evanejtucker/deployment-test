@@ -8,7 +8,7 @@ const morgan = require('morgan');
 const ejs = require('ejs');
 const mongoose = require('mongoose');
 const main = require('./controller/routes/mainRoutes.js');
-const dbConfig = require('./controller/dbConfig.js');
+// const dbConfig = require('./controller/dbConfig.js');
 
 // middleware
 app.use(bodyParser.urlencoded({ extended: true }));
