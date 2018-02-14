@@ -17,13 +17,7 @@ app.use(morgan('tiny'));
 
 app.set('view engine', 'ejs');
 
-// connect to db
-// mongoose.connect(dbConfig.url, (err)=> {
-//     if(err) throw err;
-//     else console.log('successfully connected to db');
-// });
-mongoose.connect('mongodb://heroku_1fd77vjf:jql0tc7igk312bni82qn46shct@ds235768.mlab.com:35768/heroku_1fd77vjf'
-, (err)=> {
+mongoose.connect('mongodb://heroku_1fd77vjf:jql0tc7igk312bni82qn46shct@ds235768.mlab.com:35768/heroku_1fd77vjf', (err)=> {
     if(err) throw err;
     else console.log('successfully connected to db');
 });
