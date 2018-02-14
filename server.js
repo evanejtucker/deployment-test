@@ -11,7 +11,7 @@ const main = require('./controller/routes/mainRoutes.js');
 const dbConfig = require('./controller/dbConfig.js');
 
 // middleware
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(morgan('tiny'));
 
